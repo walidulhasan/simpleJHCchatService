@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>BDmessenger</title>
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <h1 class="title"><b style="color:white">BD</b><b style="color:#058c96">messenger</b><b>💬</b></h1>
+        <div class="wrapper">
+            <div class="banner">
+                <div id="loginWrapper">
+                    <div id="nickWrapper">
+                        <input type="text" placeholder="Your name Please" id="nicknameInput" />
+                        <input type="button" value="OK" id="loginBtn" />
+                    </div>
+                </div>
+                <span id="status"></span>
+            </div>
+            <div id="historyMsg">
+            </div>
+            <div class="controls" >
+                <div class="items">
+                    <input id="colorStyle" type="color" placeholder="#000" title="font color" />
+                    <input id="emoji" type="button" value="emoji" title="emoji" />
+                    <label for="sendImage" class="imageLable">
+                        <input type="button" id="images" value="add-file"  />
+                        <input id="sendImage" type="file" value="image"/>
+                    </label>
+                    <input id="clearBtn" type="button" value="clear" title="clear screen" />
+                </div>
+                <textarea id="messageInput" placeholder="enter to send"></textarea>
+                <input id="sendBtn" type="button" value="SEND">
+                <div id="emojiWrapper">
+                </div>
+            </div>
+        </div>
+        <footer style="color:white">
+           &nbsp; &copy 2021 BDMessenger Ltd. | www.bdmessenger.com
+        </footer>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="scripts/main.js"></script>
+		<script src="scripts/socket.io.js"></script>
+      
+    </body>
+</html>

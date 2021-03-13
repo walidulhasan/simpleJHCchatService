@@ -1,0 +1,189 @@
+
+html, body {
+    margin: 0;
+    background-color: darkslategrey;
+    font-family: 'Century Gothic';
+}
+#loginBtn{
+    font-size: 24px;
+    font-weight: 700;
+    color: #7e7e7e;
+    flex-grow: 1;
+    border: none;
+    margin: 0px 12px;
+    outline: none;
+    background-color: #ebebeb;
+}
+.title {
+    margin: 20px 0;
+    text-align: center;
+}
+.wrapper {
+    border: 8px solid darkslategrey;
+    border-radius: 24px;
+    overflow: hidden;
+    width: 378px;
+    height: 567px;
+    padding: 5px;
+    margin: 0 auto;
+    background-color: #ddd;
+}
+#nickWrapper{
+    width: 10px;
+}
+#loginWrapper {
+    font-size: 24px;
+    font-weight: 700;
+    color: #7e7e7e;
+    flex-grow: 1;
+    border: none;
+    margin: 0px 12px;
+    outline: none;
+    background-color: #ebebeb;
+    border-radius: 4px;
+}
+#nicknameInput{
+    font-size: 24px;
+    font-weight: 700;
+    color: #7e7e7e;
+    flex-grow: 1;
+    border: none;
+    margin: 0px 12px;
+    outline: none;
+    background-color: #ebebeb;
+    
+}
+
+.banner {
+    height: 33px;
+    width: 100%;
+}
+.banner p {
+    float:left;
+    display: inline-block;
+}
+.controls {
+    height: 100px;
+    margin: 5px 0px;
+    position: relative;
+}
+#historyMsg {
+    display: flex;
+    flex-direction: column;
+    background-color: #f6f6f6;
+    width: 341px;
+    height: 404px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin-left: 12px;
+    padding-left: 14px;
+    border-radius: 9px;
+
+}
+#historyMsg img {
+    max-width: 70%;
+    
+}
+.timespan {
+    color: #ddd;
+}
+#colorStyle {
+    width: 50px;
+    border: none;
+    padding: 0;
+    margin-left: 12px;
+}
+.imageLable {
+    position: relative;
+}
+#sendImage {
+    position: absolute;
+    width: 52px;
+    left: 0;
+    opacity: 0;
+    overflow: hidden;
+}
+.items #emoji,#clearBtn{
+  border: 2px solid #000000;
+  border-radius: 0.5rem;
+  color: #fff;
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+}
+
+#messageInput {
+    width: 296px;
+    max-width: 296px;
+    height: 90px;
+    max-height: 90px;
+    float:left;
+    margin-top: 3px;
+    margin-left: 13px;
+    border-radius: 7px;
+}
+#sendBtn {
+    width: 50px;
+    height: 96px;
+    float: right;
+    margin-top: 2px;
+    margin-right: 11px;
+    border: 2px solid #000000;
+    border-radius: 0.5rem;
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+    padding-left: 3px;
+}
+#emojiWrapper {
+    display: none;
+    width: 500px;
+    bottom: 105px;
+    position: absolute;
+    background-color: #aaa;
+    box-shadow: 0 0 10px #555;
+}
+#emojiWrapper img {
+    margin: 2px;
+    padding: 2px;
+    width: 25px;
+    height: 25px;
+}
+#emojiWrapper img:hover {
+    background-color: blue;
+}
+.emoji{
+    display: inline;
+    width: 120px;
+}
+footer {
+    text-align: center;
+}
+#images{
+    border: 2px solid #000000;
+  border-radius: 0.5rem;
+  color: #fff;
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+}
+@media only screen and (max-width:800px) {
+    /* For tablets: */
+    .body {
+      width: 80%;
+      padding: 0;
+    }
+    .wrapper {
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width:500px) {
+    /* For mobile phones: */
+    .body, .wrapper, .right {
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width:400px) {
+    /* For mobile phones: */
+    .body, .wrapper, .right {
+      width:378px;
+    }
+  }
